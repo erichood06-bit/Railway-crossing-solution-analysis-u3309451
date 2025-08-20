@@ -4,6 +4,7 @@
 4)	Object detector checks that object is 50m outbound from crossing
 5)	Boom gates are raised
 6)	Repeat
+   
 OR
 1)	Tracks are checked for all objects
 2)	Object detected on crossing
