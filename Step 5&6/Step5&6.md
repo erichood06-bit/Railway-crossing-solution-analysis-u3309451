@@ -1,18 +1,1 @@
-1)	Tracks are checked for all objects 
-2)	Object (train) is detected100m inbound to the crossing
-3)	Boom gates start closing and warning lights flash
-4)	Object detector checks that object is 50m outbound from crossing
-5)	Boom gates are raised
-6)	Repeat
-   
-OR
-1)	Tracks are checked for all objects
-2)	Object detected on crossing
-3)	Timer set to 10 seconds
-4)	Check crossing for object again
-5)	Lower boom gates and flash lights
-6)	Loop until no object on crossing
-7)	Timer set for 20 seconds
-8)	Raise boom gates and extinguish lights
-9)	Repeat
-
+The circuit starts, checking the whole length of track. If an object is detected on the 100m inbound sensor, it lowers the boom gates and starts flashing the warning lights. The gates stay lowered until the 50m outbound sensor detects the last train carriage going past it, then the gates are raised and the warning lights shut off. The circuit then continues monitoring the tracks. If the object was instead detected on the crossing, a 10 second timer is started which upon ending, the gates lower and the lights start flashing. This continues until the obstruction is no longer detected. A 20 second timer is then started, after which the gates raise, and the warning lights shut off. The circuit then continues monitoring the tracks.
